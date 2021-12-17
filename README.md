@@ -1,2 +1,2 @@
-# cryptoquail_cipher
+# CryptoQuail
 The CryptoQuail block cipher implemented in Python.
