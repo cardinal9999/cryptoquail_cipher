@@ -7,6 +7,10 @@ CryptoQuail works by using modular addition, xor, and the rail fence cipher. It 
 The key for the encryption is 24 bytes long.
 
 [Diagram of CryptoQuail](howitworks.md)
+
+## How secure is it?
+Like the stream cipher, it is good at the avalanche effect, but sometimes, 2 ciphertexts that have been encrypted with a similar key might have some same characters.
+
 ## Installation
 You need to have Git command line installed on your computer.
 
