@@ -11,6 +11,8 @@ The key for the encryption is 24 bytes long.
 ## How secure is it?
 Like the stream cipher, it is good at the avalanche effect, but sometimes, 2 ciphertexts that have been encrypted with a similar key might have some same characters.
 
+You can encrypt the string 2 or 3 times for better security.
+
 ## Installation
 You need to have Git command line installed on your computer.
 
