@@ -11,7 +11,9 @@ The key for the encryption is 24 bytes long. You can generate a key from a seed 
 ## How secure is it?
 Like the stream cipher, it is good at the avalanche effect, but sometimes, 2 ciphertexts that have been encrypted with a similar key might have some same characters.
 
-You can encrypt the string 2 or 3 times for much better security.
+You can encrypt the string 2 or 3 times for better security.
+
+You can also try hashing the key and using the first 24 bytes for encryption. This is the most effective method.
 
 > (Even if CryptoQuail encrypts strings, it only supports the first 256 unicode characters.)
 ## Installation
@@ -23,11 +25,12 @@ git clone https://github.com/cardinal9999/cryptoquail_cipher
 cd cryptoquail_cipher
 ```
 
+### 1. Python
 Now, type `py` to open Python. If you type `import cryptoquail`, it will import the module and you can encrypt and decrypt strings with the block cipher.
 
 If you want to use CryptoQuail encryption in IDLE, move the `cryptoquail.py` file to the directory of your Python project.
 
-## Example
+#### Example
 ```py
 # Import CryptoQuail 
 import cryptoquail
