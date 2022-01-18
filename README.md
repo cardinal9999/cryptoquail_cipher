@@ -4,7 +4,7 @@ The CryptoQuail block cipher is a new encryption based on the [CryptoQuail](http
 ## How it Works
 CryptoQuail works by using modular addition, xor, and the rail fence cipher. It encrypts each block with an amount of rounds. The number of rounds is depended on the number of blocks it already encrypted.
 
-The key for the encryption is 24 bytes long. You can generate a key from a seedstring with [this program](https://pastebin.com/TdtVYr7q).
+The key for the encryption is 24 bytes long. You can generate a key from a seed string with [this program](https://pastebin.com/TdtVYr7q).
 
 [Diagram of CryptoQuail](howitworks.md)
 
@@ -13,6 +13,7 @@ Like the stream cipher, it is good at the avalanche effect, but sometimes, 2 cip
 
 You can encrypt the string 2 or 3 times for much better security.
 
+> (Even if CryptoQuail encrypts strings, it only supports the first 256 unicode characters.)
 ## Installation
 You need to have Git command line installed on your computer.
 
