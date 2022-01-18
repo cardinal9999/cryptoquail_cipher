@@ -77,7 +77,6 @@ def encrypt(string, key):
     ciphertext = encode(ciphertext, text2number(key, 12))
     return xor(ciphertext, chr(text2number(key1, 127)) + chr(text2number(key, 127)))
 
-
 def decrypt(cipher, key):
     string = ""
     odometer = [1, 2, 3, 4]
