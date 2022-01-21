@@ -36,7 +36,7 @@ If you want to use CryptoQuail encryption in IDLE, move the `cryptoquail.py` fil
 import cryptoquail
 key = "336NTMZESMUW9ZMSFXTLLT4P"
 # Encryption
-ciphertext = cryptoquail.encrypt("text to encrypt", key)
+ciphertext = cryptoquail.encrypt("text to encrypt", key) # Encrypt it 3 times for more security.
 # Decryption
 plaintext = cryptoquail.decrypt(ciphertext, key)
 ```
