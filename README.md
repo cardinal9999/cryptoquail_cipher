@@ -11,7 +11,7 @@ The key for the encryption is 24 bytes long. You can generate a key from a seed 
 ## How secure is it?
 Like the stream cipher, it is good at the avalanche effect, but sometimes, 2 ciphertexts that have been encrypted with a similar key might have some same characters.
 
-You can encrypt the string 2 or 3 times for better security.
+You can encrypt the string 3 or 4 times for better security.
 
 You can also try hashing the key and using the first 24 bytes for encryption. This is the most effective method.
 
