@@ -59,7 +59,7 @@ def encrypt(string, key):
         block = pad(block)
         if odometer[0] == 1:
             for i in range(4): 
-                block = modEncrypt(block, key)
+                block = modEncrypt(block, key1)
                 block = xor(block, key)
         elif odometer[1] == 1:
             for i in range(3):
@@ -93,7 +93,7 @@ def decrypt(cipher, key):
         elif odometer[0] == 1:
             for i in range(4):
                 block = xor(block, key)
-                block = modDecrypt(block, key)
+                block = modDecrypt(block, key1)
         elif odometer[3] == 1:
             block = xor(block, key1)
             block = modDecrypt(block, key1)
