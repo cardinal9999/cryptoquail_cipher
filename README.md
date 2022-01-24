@@ -13,7 +13,7 @@ Like the stream cipher, it is good at the avalanche effect, but sometimes, 2 cip
 
 You can encrypt the string 3 or 4 times for better security.
 
-You can also try hashing the key and using the first 24 bytes for encryption. This is the most effective method.
+You can also try hashing the key and using the first 24 bytes for encryption with `cryptoquail.keygen`. This is the most effective method.
 
 > (Even if CryptoQuail encrypts strings, it only supports the first 256 unicode characters.)
 ## Installation
@@ -34,7 +34,7 @@ If you want to use CryptoQuail encryption in IDLE, move the `cryptoquail.py` fil
 ```py
 # Import CryptoQuail 
 import cryptoquail
-key = "336NTMZESMUW9ZMSFXTLLT4P"
+key = cryptoquail.keygen("password")
 # Encryption
 ciphertext = cryptoquail.encrypt("text to encrypt", key) # Encrypt it 3 times for more security.
 # Decryption
