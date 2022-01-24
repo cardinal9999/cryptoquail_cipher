@@ -1,6 +1,12 @@
 # CryptoQuail Block Cipher
 from itertools import cycle
 import math
+import hashlib, base64
+
+def keygen(key):
+    h = hashlib.sha256()
+    h.update(key.encode())
+    return base64.a85encode(h.digest()).decode()[:24]
 
 def rail_pattern(n):
     r = list(range(n))
