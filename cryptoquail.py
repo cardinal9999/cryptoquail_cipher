@@ -24,6 +24,8 @@ def decode(ciphertext, rails):
 ######
 
 def text2number(string__, x):
+    if ord(string__[-1]) % 2 == 1:
+        string__ = string__[::-1]
     return (int.from_bytes(string__.encode(), "little") % x) + 2
 
 def modEncrypt(msg, key):
