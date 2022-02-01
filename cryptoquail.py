@@ -54,6 +54,10 @@ def pad(e):
 ######
 
 def encrypt(string, key):
+    """
+Encrypts the string with CryptoQuail.
+For better security, encrypt the string 3 times.
+    """
     string = chr(len(string)) + string
     string = modEncrypt(string, key)
     ciphertext = ""
