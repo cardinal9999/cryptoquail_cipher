@@ -1,4 +1,6 @@
 # CryptoQuail
+> ## NOTE: This repository is only a prototype — it is not for serious use
+
 The CryptoQuail block cipher is a new encryption based on the [CryptoQuail](https://github.com/cardinal9999/CryptoQuail) stream cipher. It is designed to be more secure than it.
 
 ## How it Works
