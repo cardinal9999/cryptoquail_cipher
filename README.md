@@ -11,7 +11,7 @@ The key for the encryption is 24 bytes long. You can generate a key from a seed 
 [Diagram of CryptoQuail](howitworks.md)
 
 ## How secure is it?
-> UPDATE: THIS IS OUTDATED
+> ### UPDATE: THIS IS OUTDATED
 
 Like the stream cipher, it is good at the avalanche effect, but sometimes, 2 ciphertexts that have been encrypted with a similar key might have some same characters.
 
